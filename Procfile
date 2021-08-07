@@ -1,1 +1,1 @@
-web: yarn build && cd build npx http-server
+web: chmod +x heroku-launch-server && .\heroku-launch-server.sh
