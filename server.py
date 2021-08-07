@@ -1,10 +1,10 @@
-from flask import Flask, request, url_for, Response
-import os
+from flask import Flask
+
 app = Flask(__name__,static_url_path="/")
 
 @app.route('/')
 def indexpage():
-    return app.send_static_file('index.html')
+    return app.send_static_file('index.html') # index.html is our homepage, which isnt served at / by default
 
 #@app.route("/<pagename>")
 #def page(pagename):
